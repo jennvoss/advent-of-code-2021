@@ -30,28 +30,6 @@ const part1 = (arr) => {
 };
 
 const part2 = (arr) => {
-    // function getO2(arr, i=0) {      
-    //     let mostCommon = getMostCommon(arr);
-    //     let keep = [];
-        
-    //     arr.map(n => {
-    //         if (n[i] === mostCommon[i]) keep.push(n);
-    //     })
-
-    //     return keep.length === 1 ? keep[0] : getO2(keep, i + 1);
-    // }
-    
-    // function getCO2(arr, i=0) {      
-    //     let leastCommon = getMostCommon(arr).map(flip);
-    //     let keep = [];
-        
-    //     arr.map(n => {
-    //         if (n[i] === leastCommon[i]) keep.push(n);
-    //     });
-
-    //     return keep.length === 1 ? keep[0] : getCO2(keep, i + 1);
-    // }
-
     function getLast(rating, arr, i=0) {    
         let bits = rating === 'o2' ? getMostCommon(arr) : getMostCommon(arr).map(flip);
         let keep = [];
